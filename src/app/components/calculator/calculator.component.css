@@ -1,0 +1,13 @@
+.tabla__origen{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.formulario img{
+    width: 100%;
+    height: auto;
+}

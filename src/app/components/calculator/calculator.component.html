@@ -1,0 +1,53 @@
+    <!--------------------------------------FORMULARIO-------------------------------------->
+
+    <section  class="formulario">
+      <img src="../../../assets/img/superacion.jpg" alt="calculadora" class="calculadora">
+      <h1 class="titulo">Calculadora de ahorro</h1>
+      <div class="formulario__cuerpo">
+        <div data-aos="zoom-in" data-aos-duration="1500" class="formulario__input">
+          <form>
+            <input type="number" [(ngModel)]="ingreso" name="ingreso">
+          </form>
+          <button type="submit" value="Enviar" (click)="calcular()">Calcular</button>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------TABLA-------------------------------------->
+    <section id="tabla" class="tabla__origen">
+      <table class="tabla__origen__tabla">
+        <thead class="tabla__origen__tabla__title">
+          <tr>
+            <th class="th1"></th>
+            <td class="td1">
+            </td>
+          </tr>
+          <tr>
+            <th>Tipo de gasto</th>
+            <td>Monto a destinar</td>
+          </tr>
+        </thead>
+        <tbody class="tabla__origen__tabla__calculadora">
+          <tr>
+            <th>Para toda la vida</th>
+            <td class="td2">{{ paraTodaLaVida }}</td>
+          </tr>
+          <tr>
+            <th>Gastos basicos</th>
+            <td class="td3">{{ gastosBasicos }}</td>
+          </tr>
+          <tr>
+            <th>Gustos de corto plazo</th>
+            <td class="td5">{{ gustosCortoPlazo }}</td>
+          </tr>
+          <tr>
+            <th>Gastos de largo plazo</th>
+            <td class="td4"> {{ gustosLargoPlazo }} </td>
+          </tr>
+          <tr>
+            <th>Emergencias</th>
+            <td class="td6">{{ emergencias }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
